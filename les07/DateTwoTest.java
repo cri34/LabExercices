@@ -15,6 +15,7 @@ public class DateTwoTest {
      * @param args the command line arguments
      */
     DateTwo myDateTwo = new DateTwo();
+    myDateTwo.dayNumber=0;
     myDateTwo.displayDay();
 
   } 

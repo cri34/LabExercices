@@ -14,6 +14,7 @@ public class ClockTest {
      */
     public static void main(String[] args) {
         Clock myClock = new Clock();
+        myClock.time=800;
         myClock.displayPartOfDay();
     }
 }
