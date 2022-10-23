@@ -23,4 +23,7 @@ public class VacationScaleTwo {
         vacationDays.add(20);
         vacationDays.add(25);
     }
+    public void displayVacationDays(){
+
+    }
 }
