@@ -7,24 +7,22 @@ public class ClassMap {
     }
 
     public void setDesk() {
-        boolean isAssigned = false;
+
         for (int index = 0; index < 3; index++) {
 
             for (int ind = 0; ind < 4; ind++) {
                 if (deskArray[index][ind] == null) {
                     deskArray[index][ind] = name;
                     System.out.println("desk position row "+index+" column "+ind +" is assigned to "+name);
-                    isAssigned = true;
-                    break;
+
+                    return;
                 }
             }
-            if (isAssigned) {
-                break;
-            }
+
+
         }
-        if (!isAssigned) {
+
             System.out.println("classe llena");
-        }
     }
     public void searchDesk(String name){
         boolean isName=false;
