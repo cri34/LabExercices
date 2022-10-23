@@ -24,6 +24,8 @@ public class VacationScaleTwo {
         vacationDays.add(25);
     }
     public void displayVacationDays(){
-
+for(int index=0;index < vacationDays.size();index++){
+    System.out.println(" the vacation for "+index+" years of service is "+vacationDays.get(index));
+}
     }
 }

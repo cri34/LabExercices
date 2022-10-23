@@ -21,5 +21,11 @@ public class NamesListTwo {
         listOfNames.add("Linda Baker");
         System.out.println("Size of ArrayList is: " + listOfNames.size());
     }
+    public void displayNames(){
+        System.out.println("tamaño es " +listOfNames.size());
+        for (Object nombre:listOfNames){
+            System.out.println(nombre);
+        }
+    }
        
 }
