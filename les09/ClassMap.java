@@ -25,22 +25,17 @@ public class ClassMap {
             System.out.println("classe llena");
     }
     public void searchDesk(String name){
-        boolean isName=false;
+        boolean isName;
         for (int row=0;row<3;row++){
             for (int col=0;col<4;col++){
                 isName = deskArray[row][col]!=null && deskArray[row][col].equals(name);
                 if (isName){
                     System.out.println("desk position to "+name+" is row "+row+" col "+col);
-                    break;
+                    return;
                 }
             }
-            if (isName){
-                break;
-            }
         }
-        if (!isName){
             System.out.println(name+" don't stay in any desk");
-        }
     }
 
     public void displayDeskMap() {
