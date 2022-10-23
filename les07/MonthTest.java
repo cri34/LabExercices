@@ -15,7 +15,7 @@ public class MonthTest {
         /**
          * @param args the command line arguments
          */
-        Month myMonth = new Month();
+        Month myMonth = new Month(13);
         myMonth.displayMonth();
 
     }

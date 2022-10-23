@@ -1,47 +1,16 @@
 public class Month {
     int monthNumber = 1;
+    public Month(int  monthNumber){
+        this.monthNumber=monthNumber;
+
+    }
+    String [] meses={"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Nobiembre","Diciembre"};
 
     public void displayMonth() {
-        switch (monthNumber) {
-            case 1:
-                System.out.println("Enero");
-                break;
-            case 2:
-                System.out.println("Febrero");
-                break;
-            case 3:
-                System.out.println("Marzo");
-                break;
-            case 4:
-                System.out.println("Abril");
-                break;
-            case 5:
-                System.out.println("Mayo");
-                break;
-            case 6:
-                System.out.println("Junio");
-                break;
-            case 7:
-                System.out.println("Julio");
-                break;
-            case 8:
-                System.out.println("Agosto");
-                break;
-            case 9:
-                System.out.println("Septiembre");
-                break;
-            case 10:
-                System.out.println("Octubre");
-                break;
-            case 11:
-                System.out.println("Nobiembre");
-                break;
-            case 12:
-                System.out.println("Diciembre");
-                break;
-            default:
-                System.out.println("invalido");
-
+        if (monthNumber < 1|| monthNumber > 12){
+            System.out.println("numero de mes invalido minimo 1 max 12");
+            return;
         }
+        System.out.println("numero mes: "+monthNumber +" nombre mes: "+ meses[monthNumber-1]);
     }
 }
