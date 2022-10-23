@@ -29,11 +29,11 @@ class ClassMapTest{
     
     //Challenge Lab:  Searching the desk of a student 
     //cm.name = "Donald";
-    //cm.searchDesk();
+    cm.searchDesk("Donald");
 
    //Challenge Lab: Searching the desk of another student 
     //cm.name = "Ronn";
-    //cm.searchDesk();
+    cm.searchDesk("Bond");
   } //end main
  }//end class
 
