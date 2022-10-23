@@ -13,8 +13,7 @@ public class ClockTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Clock myClock = new Clock();
-        myClock.time=800;
+        Clock myClock = new Clock(0);
         myClock.displayPartOfDay();
     }
 }
