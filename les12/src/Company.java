@@ -7,7 +7,8 @@
  *
  * @author Administrator
  */
-public class Company implements Printable{
+//public class Company implements Printable
+public class Company {
     private String companyName;
     private int taxID;
     private String CEO;

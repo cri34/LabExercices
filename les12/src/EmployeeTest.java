@@ -20,7 +20,7 @@ public class EmployeeTest {
 
         myEditor.setName("Fred Hanson");
         myEditor.setJobTitle("Editor");
-        myEditor.calculateEmployeeID();
+      //  myEditor.calculateEmployeeID();
         myEditor.setLevel(1);
         myEditor.setSkill("technical editing");
         myEditor.setSkill("typing");
@@ -30,7 +30,7 @@ public class EmployeeTest {
 
         myGI.setJobTitle("Graphic Illustrator");
         myGI.setName("Frank Moses");
-        myGI.calculateEmployeeID();
+      //  myGI.calculateEmployeeID();
         myGI.setLevel(3);
         myGI.setSkill("technical illustration");
         myGI.setSkill("video production");
@@ -40,7 +40,7 @@ public class EmployeeTest {
 
         myTW.setName("James Ralph");
         myTW.setJobTitle("Technical Writer");
-        myTW.calculateEmployeeID();
+       // myTW.calculateEmployeeID();
         myTW.setLevel(1);
         myTW.setSkill("technical writing");
         myTW.displayInformation();
@@ -48,7 +48,7 @@ public class EmployeeTest {
 
         myManager.setName("Susan Smith");
         myManager.setJobTitle("Manager");
-        myManager.calculateEmployeeID();
+      //  myManager.calculateEmployeeID();
         myManager.setLevel(2);
         myManager.setEmployee(myEditor);
         myManager.setEmployee(myGI);
