@@ -11,7 +11,7 @@
 public class DateThreeTest {
   public static void main(String args[]){
 DateThree dT = new DateThree();
-dT.setDate(2100,12,31);
+dT.setDate(2000,2,29);
 dT.print();
   } // end main
 } // end class
