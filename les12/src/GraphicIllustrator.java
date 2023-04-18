@@ -6,8 +6,8 @@ public class GraphicIllustrator extends  SkilledEmployee{
 
     }
     @Override
-    public void displayInformation(){
-        super.displayInformation();
+    public void print(){
+        super.print();
     }
 
 }

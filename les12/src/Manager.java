@@ -12,8 +12,8 @@ public class Manager extends Employee{
         employees.add(e);
     }
     @Override
-    public void displayInformation(){
-       super.displayInformation();
+    public void print(){
+       super.print();
        displayEmployees();
     }
     public void displayEmployees(){

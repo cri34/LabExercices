@@ -22,8 +22,8 @@ public abstract class SkilledEmployee extends Employee{
        return number >= minNumber && number <= maxNumber;
     }
     @Override
-    public void displayInformation(){
-       super.displayInformation();
+    public void print(){
+       super.print();
        displaySkills();
     }
     public void displaySkills(){

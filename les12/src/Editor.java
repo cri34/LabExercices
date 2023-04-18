@@ -11,8 +11,8 @@ public class Editor extends SkilledEmployee{
         this.prefersPaperEditing=prefersPaperEditing;
     }
     @Override
-    public void displayInformation(){
-        super.displayInformation();
+    public void print(){
+        super.print();
         System.out.println("Prefers Editing: " + getPrefersEditing());
     }
     public String getPrefersEditing(){

@@ -11,7 +11,7 @@ public class CompanyTest {
     
     /**
      * @param args the command line arguments
-     *//*
+     */
     public static void main(String[] args) {
         Printer myPrinter = new Printer();
         Company myCompany = new Company();
@@ -22,7 +22,6 @@ public class CompanyTest {
         myCompany.setTaxID(5544332);
         myCompany.setCEO("Eleanor Duke");
         myPrinter.printToScreen(myCompany);
-        
         myRegion.setRegion("Americas");
         myRegion.addCountry("US");
         myRegion.addCountry("Mexico");
@@ -37,5 +36,5 @@ public class CompanyTest {
         myCountry.setLanguage("Spanish");
         myPrinter.printToScreen(myCountry);
     }
-    */
+
 }

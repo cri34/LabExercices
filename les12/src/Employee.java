@@ -1,4 +1,4 @@
-public abstract class Employee {
+public abstract class Employee implements Printable{
     private String name ;
     private String jobTitle;
     private int level;
@@ -61,7 +61,8 @@ public abstract class Employee {
     public String toString(){
         return "ID : "+getEmployeeId()+" Job Title : "+ getJobTitle();
     }
-    public void displayInformation(){
+    @Override
+    public void print(){
         System.out.println("Employee Information:\nID : "+getEmployeeId()+ "\nName : "+ getName() +"\nJob Title : "+ getJobTitle()+"\nLevel : "+getLevel()+"\n");
     }
 }

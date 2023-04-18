@@ -6,7 +6,7 @@ public class TechnicalWriter extends SkilledEmployee{
 
     }
     @Override
-    public void displayInformation(){
-        super.displayInformation();
+    public void print(){
+        super.print();
     }
 }

@@ -12,7 +12,9 @@ public class EmployeeTest {
     /**
      * @param args the command line arguments
      */
+
     public static void main(String[] args) {
+        Printer p = new Printer();
         Manager myManager = new Manager();
         Editor myEditor = new Editor();
         GraphicIllustrator myGI = new GraphicIllustrator();
@@ -25,7 +27,8 @@ public class EmployeeTest {
         myEditor.setSkill("technical editing");
         myEditor.setSkill("typing");
         myEditor.setPrefersPaperEditing(true);
-        myEditor.displayInformation();
+        //myEditor.displayInformation();
+        p.printToScreen(myEditor);
         System.out.println("**** *****");
 
         myGI.setJobTitle("Graphic Illustrator");
@@ -35,7 +38,8 @@ public class EmployeeTest {
         myGI.setSkill("technical illustration");
         myGI.setSkill("video production");
         myGI.setSkill("media authoring");
-        myGI.displayInformation();
+        //myGI.displayInformation();
+        p.printToScreen(myGI);
         System.out.println("**** *****");
 
         myTW.setName("James Ralph");
@@ -43,7 +47,8 @@ public class EmployeeTest {
        // myTW.calculateEmployeeID();
         myTW.setLevel(1);
         myTW.setSkill("technical writing");
-        myTW.displayInformation();
+        //myTW.displayInformation();
+        p.printToScreen(myTW);
         System.out.println("**** *****");
 
         myManager.setName("Susan Smith");
@@ -53,6 +58,7 @@ public class EmployeeTest {
         myManager.setEmployee(myEditor);
         myManager.setEmployee(myGI);
         myManager.setEmployee(myTW);
-        myManager.displayInformation();
+        //myManager.displayInformation();
+        p.printToScreen(myManager);
     }
 }
