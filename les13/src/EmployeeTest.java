@@ -23,8 +23,13 @@ public class EmployeeTest {
         myEditor.setJobTitle("Editor");
         myEditor.calculateEmployeeID();
         myEditor.setLevel(1);
-        myEditor.setSkill("technical editing");
-        myEditor.setSkill("typing");
+        try {
+            myEditor.setSkill("technical editing");
+            myEditor.setSkill("typ");
+        } catch (InvalidSkillException e) {
+            System.out.println(e);
+        }
+
         myEditor.setPrefersPaperEditing(true);
         myPrinter.printToScreen(myEditor);
         System.out.println("**** *****");
@@ -33,9 +38,14 @@ public class EmployeeTest {
         myGI.setName("Frank Moses");
         myGI.calculateEmployeeID();
         myGI.setLevel(3);
-        myGI.setSkill("technical illustration");
-        myGI.setSkill("video production");
-        myGI.setSkill("media authoring");
+        try {
+            myGI.setSkill("technical illustration");
+            myGI.setSkill("video production");
+            myGI.setSkill("media authoring");
+        } catch (InvalidSkillException e) {
+            System.out.println(e);
+        }
+
         myPrinter.printToScreen(myGI);
         System.out.println("**** *****");
 
@@ -43,7 +53,11 @@ public class EmployeeTest {
         myTW.setJobTitle("Technical Writer");
         myTW.calculateEmployeeID();
         myTW.setLevel(1);
-        myTW.setSkill("technical writing");
+        try {
+            myTW.setSkill("technical writing");
+        } catch (InvalidSkillException e) {
+            System.out.println(e);
+        }
         myPrinter.printToScreen(myTW);
         System.out.println("**** *****");
 
